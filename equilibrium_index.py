@@ -1,4 +1,14 @@
-#code
+def equilibrium(A):
+    for i in range(len(A)):
+        sl = 0
+        for il in range(i):
+            sl += A[il]
+        for ir in range(i+1, len(A)):
+            sl -= A[ir]
+        if sl == 0:
+            return i
+    return -1
+    
 def equilibrium_optimised(A):
     if len(A)==1:
         return 1
@@ -13,9 +23,5 @@ def equilibrium_optimised(A):
         idx += 1
     return -1
     
-t = int(input())
-while t > 0:
-    t-=1
-    n = int(input())
-    A = list(map(int,input().split(" ")))
-    print(equilibrium_optimised(A))
+A = []
+print(equilibrium_optimised(A))
