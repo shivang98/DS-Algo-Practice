@@ -25,3 +25,7 @@ if __name__ == '__main__':
     s.push(3)
     s.push(4)
     print(s.pop())
+    print(s.pop())
+    print(s.pop())
+    print(s.pop())
+    print(s.isEmpty())
