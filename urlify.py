@@ -1,3 +1,4 @@
+# can be optimised by traversing form back
 def urlify(arr, l):
     i = 0
     while i < l:
